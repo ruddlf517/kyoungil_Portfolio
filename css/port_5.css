@@ -1,0 +1,346 @@
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #fff;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Navbar Menu */
+
+.menu {
+  width: 250px;
+  height: 100%;
+  background: #333;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  letter-spacing: 3px;
+  border: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transform: translateX(0) translateZ(0);
+  transform: translateX(0) translateZ(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 10;
+}
+
+.menu.show-nav {
+  -webkit-transform: translateX(250px);
+  -ms-transform: translateX(250px);
+  transform: translateX(250px);
+  -webkit-transform: translateX(250px) tranlateZ(0);
+  -ms-transform: translateX(250px) tranlateZ(0);
+  transform: translateX(250px) tranlateZ(0);
+  -webkit-transform: translate3d(250px, 0, 0);
+  transform: translate3d(250px, 0, 0);
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  position: relative;
+  list-style: none;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 10px;
+  text-align: center;
+  border-top: 1px solid #3e3e3e;
+}
+
+.menu ul li:first-child {
+  margin-top: 80px;
+  border: 0;
+  box-shadow: none;
+}
+
+.menu ul li a {
+  font-size: 13px;
+  line-height: 1em;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  position: relative;
+  font-weight: 300;
+  padding: 8px 10px;
+  color: rgba(255, 255, 255, 0.7);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+/* contact */
+
+.menu #contact {
+  margin: 0 45px;
+  /*margin: 350px 23px;*/
+}
+
+.menu #contact a {
+  padding: 0 13px;
+}
+
+.menu #contact a img {
+  width: 20px;
+  height: auto;
+  opacity: 0.3;
+}
+
+/* nav-toggle */
+
+.nav-toggle {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transform: translateX(0) translateZ(0);
+  transform: translateX(0) translateZ(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.4s cubic-bezier(0.32, 1.25, 0.375, 1.15);
+  transition: all 0.4s cubic-bezier(0.32, 1.25, 0.375, 1.15);
+  z-index: 11;
+}
+
+.nav-toggle span {
+  color: #4c4c4c;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  font-size: 1.875em;
+}
+
+.no-touch .nav-toggle span:hover {
+  color: black;
+}
+
+.nav-toggle span.fa-times {
+  color: #fff;
+}
+
+.nav-toggle span.fa-times:hover {
+  color: #fff;
+}
+
+.nav-toggle.show-nav {
+  top: 30px;
+  left: 30px;
+}
+
+/* header (logo, top_nav) */
+
+header {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 75px;
+  padding-bottom: 60px;
+}
+
+#logo a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  margin-bottom: 50px;
+  color: #ffd700;
+}
+
+#logo {
+  text-align: center;
+}
+
+#top_nav {
+  text-align: center;
+  margin-top: 25px;
+}
+
+#top_nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#top_nav ul li {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+#top_nav ul li a {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  font-size: 13.7px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#top_nav ul li a:hover {
+  color: #FFC800;
+}
+
+#top_nav ul li a.active {
+  color: #FFC800;
+}
+
+/* contents */
+
+#contents {
+  width: 800px;
+  height: 850px;
+  margin: 0 auto;
+}
+
+#line {
+  border-top: 0.5px solid #e3e3e3;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#info p a { color: #333; }
+
+#contents h2 {
+  /* title */
+  margin:60px 0 30px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#contents #pc {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 12px;
+  color: #333;
+  letter-spacing: 0.5px;
+  line-height: 1.825em;
+  text-align: center;
+}
+
+#contents #mo {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 13px; 
+  color: #333;
+  letter-spacing: 0px;
+  line-height: 1.7em;
+  text-align: center;
+  display: none;
+}
+
+#contents h3 {
+  /* -back- button */
+  text-align: center;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 11px;
+  color: #333;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  text-transform: ;
+  text-align: center;
+}
+
+#contents h3 a {
+  /* -back- button */
+  text-decoration: none;
+  color: #333;
+}
+
+#contents img {
+  margin-top: 70px;
+}
+
+#c_line {
+  /* contents line */
+  width: 100%;
+  border-top: 1px solid #e3e3e3;
+  margin: 10px 0 50px 0;
+}
+
+#contents span {
+  font-family: 'Nanum Barun Gothic';
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 50px;
+  padding-top: 50px;
+  clear: both;
+}
+
+footer h2 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11.5px;
+  font-weight: 300;
+  color: #b2b2b2;
+  letter-spacing: 0.5px;
+}
+
+/* media */
+
+@media screen and (min-width: 660px) and (max-width: 991px) {
+  #logo a { font-size: 40px; }
+  #contents { width: 610px; height: 700px; }
+  #contents img { width: 610px; height: auto; }
+  .nav-toggle { left: 10px; }
+  .nav-toggle.show-nav { left: 10px; }
+}
+
+@media screen and (min-width: 480px) and (max-width: 659px) {
+  #logo a { font-size: 35px; }
+  #contents { width: 430px; height: 650px; }
+  #contents #pc { display: none; }
+  #contents #mo { display: block; }
+  #contents img { width: 430px; height: auto; }
+  .nav-toggle { left: 10px; top: 10px; }
+  .nav-toggle.show-nav { left: 10px; top: 10px; }
+}
+
+@media screen and (max-width: 479px) {
+  #logo a { font-size: 35px; }
+  #contents { width: 290px; height: 600px; }
+  #contents #pc { display: none; }
+  #contents #mo { display: block; }
+  #contents img { width: 290px; height: auto; }
+  .nav-toggle { left: 5px; top: 10px; }
+  .nav-toggle.show-nav { left: 5px; top: 10px; }
+}
